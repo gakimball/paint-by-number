@@ -1,0 +1,21 @@
+{
+  "name": "paint-by-number",
+  "version": "0.0.1",
+  "description": "Color ASCII art with ease.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "ascii",
+    "art"
+  ],
+  "author": "Geoff Kimball <geoff@zurb.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  }
+}
