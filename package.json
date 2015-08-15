@@ -1,6 +1,6 @@
 {
   "name": "paint-by-number",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Color ASCII art with ease.",
   "main": "index.js",
   "scripts": {
