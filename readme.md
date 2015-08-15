@@ -1,8 +1,10 @@
-# Paint by Number
-
-**Not on npm yet.**
+![Paint by Number](https://raw.githubusercontent.com/gakimball/paint-by-number/master/logo.png)
 
 A small Node library for coloring ASCII art using color maps, which map a color to a character.
+
+```bash
+npm install paint-by-number
+```
 
 Let's say you have a string like this:
 
