@@ -1,4 +1,6 @@
-![Paint by Number](https://raw.githubusercontent.com/gakimball/paint-by-number/master/logo.png)
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/gakimball/paint-by-number/master/assets/logo.png" alt="Paint by Number">
+</h1>
 
 A small Node library for coloring ASCII art using color maps, which map a color to a character.
 
