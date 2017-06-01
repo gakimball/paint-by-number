@@ -1,5 +1,7 @@
 /* eslint-env mocha */
 
+'use strict';
+
 const expect = require('chai').expect;
 const styles = require('ansi-styles');
 const paint = require('.');
