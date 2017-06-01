@@ -4,7 +4,7 @@
   "description": "Color ASCII art with ease.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "xo && mocha"
   },
   "keywords": [
     "ascii",
@@ -16,6 +16,12 @@
     "chalk": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.4"
+    "ansi-styles": "^3.0.0",
+    "chai": "^4.0.1",
+    "mocha": "^2.2.4",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true
   }
 }

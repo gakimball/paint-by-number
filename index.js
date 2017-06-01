@@ -1,27 +1,23 @@
-var chalk = require('chalk');
+const chalk = require('chalk');
 
-module.exports = paint;
+module.exports = (input, colors, palette) => {
+  const string = typeof input === 'string';
+  const defaultColor = palette[' '] || null;
 
-function paint(input, colors, palette) {
-  var string = typeof input === 'string'
-  var output = [];
-  var defaultColor = palette[' '] || null;
-  
   if (string) {
     input = [input];
     colors = [colors];
   }
 
   // Iterate through each line of the input
-  for (var l in input) {
-    var line = input[l];
-    var newLine = '';
+  const output = input.map((line, index) => {
+    let newLine = '';
 
     // Iterate through each character of the line
-    for (var ch = 0; ch < line.length; ch++) {
+    for (let ch = 0; ch < line.length; ch++) {
       // Find the color on the map that matches the character
-      var newChar = line[ch];
-      var color = colors[l] && palette[colors[l][ch] || defaultColor];
+      let newChar = line[ch];
+      const color = colors[index] && palette[colors[index][ch] || defaultColor];
 
       if (color && chalk[color]) {
         newChar = chalk[color](line[ch]);
@@ -30,11 +26,12 @@ function paint(input, colors, palette) {
       newLine += newChar;
     }
 
-    output.push(newLine);
-  }
+    return newLine;
+  });
 
   if (string) {
     return output[0];
   }
+
   return output;
-}
+};
