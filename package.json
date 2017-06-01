@@ -1,7 +1,7 @@
 {
   "name": "paint-by-number",
   "version": "1.0.0",
-  "description": "Color ASCII art with ease.",
+  "description": "Color ASCII art with ease",
   "main": "index.js",
   "scripts": {
     "test": "xo && mocha"
